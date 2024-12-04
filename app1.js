@@ -1,0 +1,86 @@
+// array
+
+// for
+
+// [] - corchetes
+// let frutas = ["manzana", "uva", "piña", "pera"];
+// console.log(frutas);
+// console.log(frutas.length);
+// console.log(frutas[0]);
+
+// for (let i = 0; i < frutas.length; i++) {
+//     console.log(frutas[i]);
+// }
+
+// // for of - para objetos itterados
+
+// for (let fruta of frutas) {
+//     console.log(fruta);
+// }
+
+// let nombreUsuario = "Ignacio";
+
+// for (letra of nombreUsuario) {
+//     console.log(letra);
+// }
+
+// // frutas[Symbol.iterator]
+
+// //for in
+
+// for (let fruta in frutas) {
+//   console.log(fruta);
+// }
+
+//function
+
+//Hoisting!
+// saludar();
+// function saludar() {
+//     console.log("Bienvenido");
+// }
+
+// function saludar(nombreUsuario) {
+//     return "Bienvenido " + nombreUsuario;
+// }
+
+// console.log(saludar("Jose"));
+
+// function sumar (n1, n2) {
+//     return parseInt(n1) + parseInt(n2);
+// }
+
+// console.log(sumar(2, 5));
+
+// let numUno = prompt("Ingrese num1");
+// let numDos = prompt("Ingrese num2");
+// console.log(sumar (numUno, numDos));
+
+// var, let, const, arrow functions
+
+// let nombreUsuario = "vix";
+
+// console.log("hola \n" + nombreUsuario);
+
+// console.log("hola " + nombreUsuario);
+
+// console.log(`hola + 
+//     ${nombreUsuario}`);
+
+// console.log(`hola + ${nombreUsuario}`);
+
+// [Log] hola 
+//vix   
+
+// [Log] hola vix (app1.js, line 63)
+    
+// [Log] hola +  (app1.js, line 64)
+// vix
+    
+// [Log] hola + vix
+
+let nombreUsuario = "vix";
+let estado = true;
+console.log(`
+    ${estado ? "en linea" : "offline"}
+    `);
