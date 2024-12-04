@@ -79,8 +79,57 @@
     
 // [Log] hola + vix
 
-let nombreUsuario = "vix";
-let estado = true;
-console.log(`
-    ${estado ? "en linea" : "offline"}
-    `);
+
+// let---------------
+
+// let nombreUsuario = "Vix";
+// let estado = true;
+// console.log('Bienvenido \n' + nombreUsuario);
+// console.log(`Bienvenido
+// ${nombreUsuario}`);
+// console.log(`Bienvenido
+// ${nombreUsuario.toUpperCase()}`);
+// console.log(`
+//     ${estado ? "en linea" : "offline"}
+//     `);
+
+
+// var---------------
+
+// var nombreUsuario = "Vix";
+// var nombreUsuario = "Max";
+// console.log(nombreUsuario);
+// Max
+// y let no permite declarar la misma variable
+
+// var estado = true;
+
+// if (estado){
+//     console.log('Entró al if');
+// }
+// console.log(estado); --- true
+
+// var estado = true;
+
+// if (estado){
+//     console.log('Entró al if');
+//     var estado = false;
+// }
+// console.log(estado); --- false
+
+// let estado = true;
+
+// if (estado){
+//     console.log('Entró al if');
+//     let estado = false;
+// }
+// console.log(estado); --- true (segunda let esta enserrada entre el skope, y var - NO)
+
+// const---------------
+
+// // no se permite
+// const estado = true;
+// estado = false;
+// //  Uncaught TypeError: invalid assignment to const 'estado'
+// //     <anonymous>
+
