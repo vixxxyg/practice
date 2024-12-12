@@ -126,10 +126,33 @@
 // console.log(estado); --- true (segunda let esta enserrada entre el skope, y var - NO)
 
 // const---------------
-
+// no se puede reasignar
 // // no se permite
 // const estado = true;
 // estado = false;
 // //  Uncaught TypeError: invalid assignment to const 'estado'
 // //     <anonymous>
 
+// const estado = true;
+
+// if (estado) {
+//     const estado = false
+//     console.log(estado);
+// }
+
+// console.log(estado);
+
+// - false app1.js:140:13
+//  - true app1.js:143:9
+
+
+// const frutas = [];
+// const frutas = ["sandía"]; - error
+
+// const frutas = [];
+// frutas = ["sandía"]; - error
+
+// const frutas = [];
+// frutas[0] = "sandia";
+
+// console.log(frutas); - Array [ "sandia" ]
