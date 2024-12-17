@@ -189,3 +189,17 @@ console.clear();
 
 // Práctica: carrito de compras
 
+const frutas1 = [];
+
+const fruta = prompt('🍒 Feria Market 🍉 Qué fruta desea comprar?')
+frutas1.push(fruta);
+
+while(confirm('Desea agregar otro elemento al 🛒 ?')){
+   const fruta = prompt('Qué fruta desea comprar?');
+   frutas1.push(fruta);
+}
+
+console.log('Compraste:');
+for (const fruta of frutas1) {
+    console.log(fruta); 
+}
