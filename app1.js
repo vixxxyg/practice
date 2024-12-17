@@ -189,17 +189,38 @@ console.clear();
 
 // Práctica: carrito de compras
 
-const frutas1 = [];
+// const frutas1 = [];
 
-const fruta = prompt('🍒 Feria Market 🍉 Qué fruta desea comprar?')
-frutas1.push(fruta);
+// const fruta = prompt('🍒 Feria Market 🍉 Qué fruta desea comprar?')
+// frutas1.push(fruta);
 
-while(confirm('Desea agregar otro elemento al 🛒 ?')){
-   const fruta = prompt('Qué fruta desea comprar?');
-   frutas1.push(fruta);
+// while(confirm('Desea agregar otro elemento al 🛒 ?')){
+//    const fruta = prompt('Qué fruta desea comprar?');
+//    frutas1.push(fruta);
+// }
+
+// console.log('Compraste:');
+// for (const fruta of frutas1) {
+//     console.log(fruta); 
+// }
+
+
+//funccion declarativa
+function numeroAleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
 }
 
-console.log('Compraste:');
-for (const fruta of frutas1) {
-    console.log(fruta); 
+console.log(numeroAleatorio(10, 21));
+
+//función expresada:
+//Anónima(expresada en una variable):
+
+const miNumero = function (min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
 }
+
+console.log(miNumero(100, 200));
+
+//dferencia declarativa vs expresada
+// в первом случае если разместить вызов функции вверху, проихойдет всплытие - хоистинг - ошибки не будет
+// а во втором выдаст ошибку
