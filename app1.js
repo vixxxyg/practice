@@ -160,32 +160,32 @@
 
 //-----Array
 
-const frutas = ['sandia', 'pera'];
-frutas.push('banana');
-console.log(frutas);
-//Array(3) [ "sandia", "pera", "banana" ]
+// const frutas = ['sandia', 'pera'];
+// frutas.push('banana');
+// console.log(frutas);
+// //Array(3) [ "sandia", "pera", "banana" ]
 
-frutas.unshift('manzana');
-console.log(frutas);
-//Array(4) [ "manzana", "sandia", "pera", "banana" ]
-
-
-frutas.pop();
-console.log(frutas);
-//Array(3) [ "manzana", "sandia", "pera" ]
-
-const frutaEliminada = frutas.pop();
-console.log(frutaEliminada);
-//pera
-console.log(frutas);
-//[ "manzana", "sandia" ]
-
-frutas.shift();
-console.log(frutas);
-//Array [ "sandia" ]
+// frutas.unshift('manzana');
+// console.log(frutas);
+// //Array(4) [ "manzana", "sandia", "pera", "banana" ]
 
 
-console.clear();
+// frutas.pop();
+// console.log(frutas);
+// //Array(3) [ "manzana", "sandia", "pera" ]
+
+// const frutaEliminada = frutas.pop();
+// console.log(frutaEliminada);
+// //pera
+// console.log(frutas);
+// //[ "manzana", "sandia" ]
+
+// frutas.shift();
+// console.log(frutas);
+// //Array [ "sandia" ]
+
+
+// console.clear();
 
 // Práctica: carrito de compras
 
@@ -206,21 +206,60 @@ console.clear();
 
 
 //funccion declarativa
-function numeroAleatorio(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-}
+// function numeroAleatorio(min, max) {
+//     return Math.floor(Math.random() * (max - min)) + min;
+// }
 
-console.log(numeroAleatorio(10, 21));
+// console.log(numeroAleatorio(10, 21));
 
-//función expresada:
-//Anónima(expresada en una variable):
+// //función expresada:
+// //Anónima(expresada en una variable):
 
-const miNumero = function (min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-}
+// const miNumero = function (min, max) {
+//     return Math.floor(Math.random() * (max - min)) + min;
+// }
 
-console.log(miNumero(100, 200));
+// console.log(miNumero(100, 200));
 
 //dferencia declarativa vs expresada
 // в первом случае если разместить вызов функции вверху, проихойдет всплытие - хоистинг - ошибки не будет
-// а во втором выдаст ошибку
+// а во втором выдаст ошибку - 
+// funciones declaradad siempre estan disponibles en tiempo de ejecucion
+// funciones expresadas no son evaluadas hasta que el intérprete no alcance su posición en el código, lo qual puede generar errores en arquitecturas muy anidadas.
+
+//funciones de flecha - arrow functions
+// son alternativas compactas a unos expresiones de fincion tradicional
+
+// const miNumeroFlecha = (max) => {
+//     return Math.floor(Math.random() * (max-1)) +1;
+// }
+
+// console.log(miNumeroFlecha(11));
+
+// con funcion de flecha podemos realizar un atajo - en 1 linea 
+// const miNumeroFlecha = max => Math.floor(Math.random() * (max-1)) +1;
+
+// console.log(miNumeroFlecha(11));
+
+// const miNumeroFlecha = (max = 2) => Math.floor(Math.random() * (max-1)) +1;
+
+// console.log(miNumeroFlecha());
+
+//Arrow and forEach
+
+const frutas1 = [];
+
+const fruta = prompt('🍒 Feria Market 🍉 Qué fruta desea comprar?')
+frutas1.push(fruta);
+
+while(confirm('Desea agregar otro elemento al 🛒 ?')){
+   const fruta = prompt('Qué fruta desea comprar?');
+   frutas1.push(fruta);
+}
+
+console.log('Compraste:');
+// for (const fruta of frutas1) {
+//     console.log(fruta); 
+// }
+
+frutas1.forEach((fruta) => console.log(fruta));
