@@ -245,21 +245,29 @@
 
 // console.log(miNumeroFlecha());
 
-//Arrow and forEach
+//Arrow and forEach (ejecuta la funcion indicada una vez por cada elemento del array)
 
-const frutas1 = [];
+//carrito de compras 2
+// const frutas1 = [];
 
-const fruta = prompt('🍒 Feria Market 🍉 Qué fruta desea comprar?')
-frutas1.push(fruta);
+// const fruta = prompt('🍒 Feria Market 🍉 Qué fruta desea comprar?')
+// frutas1.push(fruta);
 
-while(confirm('Desea agregar otro elemento al 🛒 ?')){
-   const fruta = prompt('Qué fruta desea comprar?');
-   frutas1.push(fruta);
-}
-
-console.log('Compraste:');
-// for (const fruta of frutas1) {
-//     console.log(fruta); 
+// while(confirm('Desea agregar otro elemento al 🛒 ?')){
+//    const fruta = prompt('Qué fruta desea comprar?');
+//    frutas1.push(fruta);
 // }
 
-frutas1.forEach((fruta) => console.log(fruta));
+// console.log('Compraste:');
+// frutas1.forEach((fruta) => console.log(fruta));
+
+
+// let frutas = ['manzana', 'pera'];
+// frutas.forEach(fruta => console.log(fruta));
+
+let frutas1 = ['manzana', 'uva', 'pera'];
+frutas1.forEach((fruta, index, array) => {
+    console.log(fruta);
+    console.log(index);
+    console.log(array);
+})
