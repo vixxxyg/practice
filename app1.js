@@ -156,3 +156,36 @@
 // frutas[0] = "sandia";
 
 // console.log(frutas); - Array [ "sandia" ]
+
+
+//-----Array
+
+const frutas = ['sandia', 'pera'];
+frutas.push('banana');
+console.log(frutas);
+//Array(3) [ "sandia", "pera", "banana" ]
+
+frutas.unshift('manzana');
+console.log(frutas);
+//Array(4) [ "manzana", "sandia", "pera", "banana" ]
+
+
+frutas.pop();
+console.log(frutas);
+//Array(3) [ "manzana", "sandia", "pera" ]
+
+const frutaEliminada = frutas.pop();
+console.log(frutaEliminada);
+//pera
+console.log(frutas);
+//[ "manzana", "sandia" ]
+
+frutas.shift();
+console.log(frutas);
+//Array [ "sandia" ]
+
+
+console.clear();
+
+// Práctica: carrito de compras
+
