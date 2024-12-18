@@ -79,3 +79,4 @@ const perro = {
 }
 
 console.log(perro.otros.amigos[0]);
+//console.log(perro.otros.favorito?.comida); - undefined
