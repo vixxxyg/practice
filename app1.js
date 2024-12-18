@@ -1,6 +1,6 @@
-// array
+// ------array
 
-// for
+// -----for
 
 // [] - corchetes
 // let frutas = ["manzana", "uva", "piña", "pera"];
@@ -12,7 +12,7 @@
 //     console.log(frutas[i]);
 // }
 
-// // for of - para objetos itterados
+// // -----for of - para objetos itterados
 
 // for (let fruta of frutas) {
 //     console.log(fruta);
@@ -26,13 +26,13 @@
 
 // // frutas[Symbol.iterator]
 
-// //for in
+// // -----for in
 
 // for (let fruta in frutas) {
 //   console.log(fruta);
 // }
 
-//function
+// -----function
 
 //Hoisting!
 // saludar();
@@ -56,7 +56,7 @@
 // let numDos = prompt("Ingrese num2");
 // console.log(sumar (numUno, numDos));
 
-// var, let, const, arrow functions
+// -----var, let, const, arrow functions
 
 // let nombreUsuario = "vix";
 
@@ -80,7 +80,7 @@
 // [Log] hola + vix
 
 
-// let---------------
+// -----let
 
 // let nombreUsuario = "Vix";
 // let estado = true;
@@ -94,7 +94,7 @@
 //     `);
 
 
-// var---------------
+// -----var
 
 // var nombreUsuario = "Vix";
 // var nombreUsuario = "Max";
@@ -125,7 +125,7 @@
 // }
 // console.log(estado); --- true (segunda let esta enserrada entre el skope, y var - NO)
 
-// const---------------
+// -----const
 // no se puede reasignar
 // // no se permite
 // const estado = true;
@@ -187,7 +187,7 @@
 
 // console.clear();
 
-// Práctica: carrito de compras
+// -----Práctica: carrito de compras
 
 // const frutas1 = [];
 
@@ -205,14 +205,16 @@
 // }
 
 
-//funccion declarativa
+// -----funccion declarativa
+
 // function numeroAleatorio(min, max) {
 //     return Math.floor(Math.random() * (max - min)) + min;
 // }
 
 // console.log(numeroAleatorio(10, 21));
 
-// //función expresada:
+// -----función expresada:
+
 // //Anónima(expresada en una variable):
 
 // const miNumero = function (min, max) {
@@ -227,7 +229,8 @@
 // funciones declaradad siempre estan disponibles en tiempo de ejecucion
 // funciones expresadas no son evaluadas hasta que el intérprete no alcance su posición en el código, lo qual puede generar errores en arquitecturas muy anidadas.
 
-//funciones de flecha - arrow functions
+// -----funciones de flecha - arrow functions
+
 // son alternativas compactas a unos expresiones de fincion tradicional
 
 // const miNumeroFlecha = (max) => {
@@ -247,7 +250,8 @@
 
 //Arrow and forEach (ejecuta la funcion indicada una vez por cada elemento del array)
 
-//carrito de compras 2
+// -----carrito de compras 2
+
 // const frutas1 = [];
 
 // const fruta = prompt('🍒 Feria Market 🍉 Qué fruta desea comprar?')
@@ -267,7 +271,14 @@
 
 let frutas1 = ['manzana', 'uva', 'pera'];
 frutas1.forEach((fruta, index, array) => {
-    console.log(fruta);
-    console.log(index);
-    console.log(array);
+    // console.log(fruta);
+    // console.log(index);
+    // console.log(array);
+    console.log(`${index}: ${fruta}`);
+    console.log(index, fruta);
 })
+
+
+
+let vegetales = ["ajo", "pepino", "apio"];
+vegetales.forEach((element) => console.log(element));
