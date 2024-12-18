@@ -58,3 +58,24 @@ if (gato.hasOwnProperty('nombre')) {
 }
 
 console.log(gato.nombre);
+
+
+// ----- Objetos anidados
+
+const perro = {
+    nonbre: 'Luna',
+    duerme: 'true',
+    edad: 3,
+    enemigos: ['gatos'],
+    otros: {
+        amigos: ['Cobarde', 'Rex'],
+        favoritos: {
+            comida: {
+                fria: 'carne',
+                caliente: 'pollo',
+            }
+        }
+    }
+}
+
+console.log(perro.otros.amigos[0]);
