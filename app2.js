@@ -79,4 +79,41 @@ const perro = {
 }
 
 console.log(perro.otros.amigos[0]);
+//console.log(perro.otros.favorito.comida); - error
 //console.log(perro.otros.favorito?.comida); - undefined
+
+console.clear();
+
+// -----el metodo
+
+const perro1 = {
+    nombre: 'Luna',
+    duerme: 'true',
+    edad: 3,
+    enemigos: ['gatos'],
+    comer: function() {
+        console.log('perro comiendo');
+    },
+    comerDos() {
+        console.log('perro comiendo dos');
+    },
+    comerTres(alimento) {
+        console.log("perro comiendo: " + alimento);
+    },
+    comerCuatro(alimento) {
+        console.log(`
+            ${this.nombre} esta comiendo ${alimento}
+        `);
+    }
+}
+
+perro1.comer();
+perro1.comerDos();
+perro1.comerTres("pez");
+perro1.comerCuatro("carne");
+
+// Console - perro comiendo
+// Console - perro comiendo dos
+// Console - perro comiendo: pez
+// Console - Luna esta comiendo carne
+// this - hace referencia al objeto contexto de JavaScript en el cual se está ejecutando el código actual
