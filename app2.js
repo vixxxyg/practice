@@ -142,3 +142,43 @@ perro1.listerEnemigos();
 
 //Arrow Function - No tiene this, o super y no se debe usarla como metodos
 //Pero dentro de un metodo - sí, podemos
+
+// for...of para iterar el array
+//for...in para iterar los propiedades del objetos
+const pato = {
+  nombre: "patito",
+  edad: 1,
+  enemigos: ["águilas", "zorros"],
+};
+
+for (let propiedad in pato) {
+  console.log(propiedad);
+  console.log(pato[propiedad]);
+}
+
+//nombre app2.js:155:13
+//edad app2.js:155:13
+//enemigos app2.js:155:13
+
+//patito app2.js:156:13
+//1 app2.js:156:13
+//Array [ "águilas", "zorros" ] app2.js:156:13
+
+//Object.values()
+console.log(Object.values(pato));
+// Console - Array(3) [ "patito", 1, (2) […] ]
+//0: "patito"
+//1: 1
+//2: Array [ "águilas", "zorros" ]
+//length: 3
+
+//Con forEach()
+
+Object.values(pato).forEach((item) => console.log(item));
+//Console - patito app2.js:177:47
+//          1 app2.js:177:47
+//          Array [ "águilas", "zorros" ] app2.js:177:47
+
+//Object.entries()
+//Object.key()
+//Object.getOwnPropertyNames()
