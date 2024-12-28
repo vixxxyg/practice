@@ -178,16 +178,18 @@ let vidas = 3;
 let numeroUsuario = parseInt(prompt("Adivine el numero del 1 al 10"));
 
 while (numeroMaquina !== numeroUsuario && vidas > 1) {
-//   if (numeroMaquina < numeroUsuario) {
-//     console.log("Es más bajo");
-//   } else {
-//     console.log("Es más alto");
-//   }
+  //   if (numeroMaquina < numeroUsuario) {
+  //     console.log("Es más bajo");
+  //   } else {
+  //     console.log("Es más alto");
+  //   }
 
-    let mensaje =
-      numeroMaquina > numeroUsuario ? "El numeroMaquina es mayor" : "El numeroMaquina es menor";
+  let mensaje =
+    numeroMaquina > numeroUsuario
+      ? "El numeroMaquina es mayor"
+      : "El numeroMaquina es menor";
 
-    console.log("Te equivocaste!" + mensaje);
+  console.log("Te equivocaste!" + mensaje);
   numeroUsuario = parseInt(prompt("numero del 1 al 10"));
 
   vidas--;

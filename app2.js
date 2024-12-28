@@ -182,3 +182,15 @@ Object.values(pato).forEach((item) => console.log(item));
 //Object.entries()
 //Object.key()
 //Object.getOwnPropertyNames()
+
+console.clear();
+
+const nombre = "Vix";
+
+const nombrePato = pato.nombre;
+
+const {nombre : nombreSuperPato, edad, enemigos} = pato;
+
+console.log(nombreSuperPato, edad, enemigos);
+
+//por defecto
